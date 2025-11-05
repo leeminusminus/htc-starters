@@ -105,7 +105,7 @@
   (place-image BALL-IMG (ball-x b) (ball-y b) MTS))
 
 ;; Ball Integer Integer MouseEvent -> Ball
-;; Moves ball to the mouse cursor's position when mouse is pressed
+;; Moves ball to the mouse cursor's x and y positions when mouse button is down
 
 (check-expect (handle-mouse (make-ball 54 76 4 -3) 106 207 "button-down") (make-ball 106 207 4 -3))
 (check-expect (handle-mouse (make-ball 54 76 4 -3) 106 207 "button-up") (make-ball 54 76 4 -3))
